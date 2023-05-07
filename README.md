@@ -1,5 +1,5 @@
 # Midi Instrument Changer
-A simple tool that allows you to edit the instrument change events in a MIDI file. I made this after being dissatisfied that I wasn't able to find such a simple tool anywhere else.
+A simple tool that allows you to edit the instrument change events in a MIDI file.
 
 This is intended for simple MIDI songs, so if your file has many instrument changes throughout it, you may find it easier to use a MIDI compatible DAW.
 
