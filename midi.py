@@ -57,7 +57,7 @@ def save() -> None:
 
 
 def change(id, newInstrument):
-    file[id + 1] = newInstrument
+    file[int(id) + 1] = newInstrument
 
 
 def displayMenu(instruments) -> None:
@@ -91,7 +91,7 @@ def valID(id, instruments) -> bool:
     global error
     cls()
     if id.isdigit():
-        if id in list(instruments.keys()):
+        if int(id) in list(instruments.keys()):
             return True
         else:
             error = "That isn't a valid byte"
@@ -121,8 +121,8 @@ def changeEvent(id, instruments) -> bool:
     message += """ BYTE | CHANNEL | INSTRUMENT | LOCATION
 ----------------------------------------
 """
-    data = instruments[id]
-    location = round(id / len(file) * 100)
+    data = instruments[int(id)]
+    location = round(int(id) / len(file) * 100)
     message += (
         id.ljust(6)
         + " "
