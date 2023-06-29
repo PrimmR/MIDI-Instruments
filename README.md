@@ -20,3 +20,8 @@ General Midi instrument IDs can be found in [this list](Instruments.txt).
 
 Repeat for all the change events you want to edit, then input **S** to save.
 In playback, your MIDI file should now be using the instruments you selected!
+
+## Replace All
+If your file contains a lot of switching back and forth between instruments on the same channel, you can use the replace all mode to swap all instances of an instrument to another. This replaces all events of the selected instrument, even if they are across multiple channels.
+
+To use, input **R** to enter the instrument selection screen where you can select one of the instruments that appear in the file to edit. If you make an incorrect input, you will be put back at the regular editing screen. Then enter the instrument ID to change all occurrences of the instrument to your new selection.
